@@ -771,6 +771,11 @@ h3 {
   color: var(--accent-strong);
 }
 
+.project-card > .status {
+  align-self: flex-start;
+  margin-bottom: 18px;
+}
+
 .status.progress {
   border-color: color-mix(in srgb, var(--gold) 42%, var(--line));
   background: color-mix(in srgb, var(--gold) 18%, transparent);
