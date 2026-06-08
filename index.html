@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio song ngữ của Võ Tuấn Kiệt, học sinh cấp 3 theo hướng AI, lập trình và xây dựng sản phẩm số."
+    />
+    <meta name="theme-color" content="#f7f5ef" />
+    <title>Võ Tuấn Kiệt | Học sinh xây sản phẩm AI</title>
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem("vtk-theme");
+        document.documentElement.dataset.theme = savedTheme || "light";
+        document.documentElement.dataset.lang = localStorage.getItem("vtk-lang") || "vi";
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skipLink">Bo qua menu va toi noi dung chinh</a>
+
+    <header class="site-header" id="top">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Võ Tuấn Kiệt home">
+          <span class="brand-mark">VTK</span>
+          <span class="brand-text">Võ Tuấn Kiệt</span>
+        </a>
+
+        <div class="nav-links" aria-label="Page sections">
+          <a href="#about" data-i18n="navAbout">Gioi thieu</a>
+          <a href="#projects" data-i18n="navProjects">Du an</a>
+          <a href="#skills" data-i18n="navSkills">Nang luc</a>
+          <a href="#contact" data-i18n="navContact">Lien he</a>
+        </div>
+
+        <div class="nav-actions">
+          <div class="lang-switch" aria-label="Language switcher">
+            <button type="button" class="lang-btn is-active" data-lang-target="vi" aria-pressed="true">VI</button>
+            <button type="button" class="lang-btn" data-lang-target="en" aria-pressed="false">EN</button>
+          </div>
+          <button type="button" class="icon-btn" id="themeToggle" aria-label="Switch theme">
+            <span aria-hidden="true" id="themeIcon">Moon</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Học sinh xây sản phẩm AI</p>
+          <h1 id="hero-title">Võ Tuấn Kiệt</h1>
+          <p class="hero-mantra">
+            <span data-i18n="heroMantraPrimary">Học bằng cách xây. Xây cùng AI.</span>
+            <span data-i18n="heroMantraSecondary">Từ ý tưởng nhỏ đến sản phẩm thật.</span>
+          </p>
+          <p class="hero-lead" data-i18n="heroLead">
+            Toi la mot hoc sinh cap 3 sinh nam 2009, dang hoc cach bien y tuong thanh san pham so thuc te bang lap trinh va AI.
+          </p>
+          <div class="hero-badges" aria-label="Profile tags">
+            <span data-i18n="badgeStudent">Hoc sinh 2k9</span>
+            <span data-i18n="badgeAi">Xây với AI hỗ trợ</span>
+            <span data-i18n="badgeProduct">Học theo tư duy sản phẩm</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects" data-i18n="ctaProjects">Xem du an</a>
+            <a class="btn secondary" href="#contact" data-i18n="ctaContact">Ket noi</a>
+            <a class="btn ghost" href="https://github.com/Kietvo2k" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <div class="quick-facts" aria-label="Portfolio quick facts">
+            <article>
+              <strong>2009</strong>
+              <span data-i18n="factBorn">Bat dau som voi AI va code</span>
+            </article>
+            <article>
+              <strong>4</strong>
+              <span data-i18n="factProjects">Du an dang trinh bay</span>
+            </article>
+            <article>
+              <strong>2026</strong>
+              <span data-i18n="factAchievements">Thanh tich va chung nhan</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-visual builder-visual" aria-label="AI-assisted product building loop">
+          <div class="builder-panel">
+            <div class="panel-topline">
+              <span class="panel-dot"></span>
+              <span data-i18n="panelLabel">Vòng lặp xây sản phẩm</span>
+            </div>
+            <div class="build-loop" aria-hidden="true">
+              <div class="loop-step is-active">
+                <span>01</span>
+                <strong data-i18n="loopIdea">Ý tưởng</strong>
+              </div>
+              <div class="loop-line"></div>
+              <div class="loop-step">
+                <span>02</span>
+                <strong data-i18n="loopAi">AI hỗ trợ</strong>
+              </div>
+              <div class="loop-line"></div>
+              <div class="loop-step">
+                <span>03</span>
+                <strong data-i18n="loopPrototype">Mẫu thử</strong>
+              </div>
+              <div class="loop-line"></div>
+              <div class="loop-step">
+                <span>04</span>
+                <strong data-i18n="loopTest">Kiểm thử</strong>
+              </div>
+            </div>
+            <div class="code-window" aria-label="Product building notes">
+              <div class="code-window-bar"><span></span><span></span><span></span></div>
+              <p><span>const</span> builder = <strong>"Vo Tuan Kiet"</strong>;</p>
+              <p><span>focus</span>: ["AI", "Web", "Education", "Community"]</p>
+              <p><span>method</span>: "learn -> build -> test -> improve"</p>
+            </div>
+            <div class="signal-grid" aria-label="Portfolio signals">
+              <article>
+                <strong>4</strong>
+                <span data-i18n="signalProjects">Dự án thật</span>
+              </article>
+              <article>
+                <strong>2026</strong>
+                <span data-i18n="signalYear">Cột mốc AI</span>
+              </article>
+              <article>
+                <strong>AI</strong>
+                <span data-i18n="signalDirection">Hướng đi chính</span>
+              </article>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section split-section" id="about" aria-labelledby="about-title">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="aboutEyebrow">Huong di</p>
+          <h2 id="about-title" data-i18n="aboutTitle">Toi hoc bang cach khoi xuong va xay san pham.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="story-card large-card">
+            <p data-i18n="aboutBody1">
+              Toi la Vo Tuan Kiet, mot hoc sinh cap 3 sinh nam 2009. Toi quan tam den AI, lap trinh web va cach cong nghe co the giai quyet cac van de trong hoc tap, nong nghiep, cong dong va doi song.
+            </p>
+            <p data-i18n="aboutBody2">
+              Thay vi chi hoc ly thuyet, toi muon ren nang luc bang cach tu khoi xuong du an, dung AI nhu mot cong cu ho tro viet code, thu nghiem y tuong, xay prototype va cai thien san pham.
+            </p>
+          </article>
+
+          <div class="principle-list">
+            <article class="principle-card">
+              <span>01</span>
+              <h3 data-i18n="principle1Title">Bat dau tu van de that</h3>
+              <p data-i18n="principle1Body">Moi du an nen gan voi mot nhu cau: hoc tap, nong nghiep, lop hoc, dinh huong nghe nghiep hoac cong dong.</p>
+            </article>
+            <article class="principle-card">
+              <span>02</span>
+              <h3 data-i18n="principle2Title">Dung AI de tang toc hoc tap</h3>
+              <p data-i18n="principle2Body">AI giup toi nghien cuu, lap ke hoach, viet ban dau, debug va hieu cach mot san pham duoc tao ra.</p>
+            </article>
+            <article class="principle-card">
+              <span>03</span>
+              <h3 data-i18n="principle3Title">Ke cau chuyen bang du an</h3>
+              <p data-i18n="principle3Body">Moi san pham la mot moc hoc tap: toi da lam gi, hoc gi, va buoc tiep theo la gi.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-header centered">
+          <p class="eyebrow" data-i18n="projectsEyebrow">Du an</p>
+          <h2 id="projects-title" data-i18n="projectsTitle">Nhung san pham dang dinh hinh huong di cua toi.</h2>
+          <p data-i18n="projectsIntro">
+            Toi uu tien trinh bay du an theo van de, vai tro, trang thai va bai hoc thay vi chi liet ke cong nghe.
+          </p>
+        </div>
+
+        <div class="project-group">
+          <div class="group-label">
+            <span data-i18n="featuredLabel">Dự án nổi bật</span>
+            <small data-i18n="featuredHint">AI, giao duc, nong nghiep va kha nang mo rong.</small>
+          </div>
+          <div class="project-grid featured-grid">
+            <article class="project-card featured-card">
+              <div class="project-topline">
+                <span class="status" data-i18n="statusCompleted">Hoàn thành bản đầu</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3>SmartGardenAI</h3>
+              <p data-i18n="smartGardenDesc">
+                Du an AI ve nong nghiep thong minh, huong den viec ho tro theo doi va cham soc cay trong hieu qua hon.
+              </p>
+              <dl class="project-details">
+                <div>
+                  <dt data-i18n="labelRole">Vai tro</dt>
+                  <dd data-i18n="smartGardenRole">Khoi xuong y tuong, dinh huong san pham, xay ban dau voi su ho tro cua AI.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="labelNext">Tiep theo</dt>
+                  <dd data-i18n="smartGardenNext">Mo rong quy mo de tham gia cac du an va cuoc thi lon hon.</dd>
+                </div>
+              </dl>
+              <div class="tag-row">
+                <span>AI</span><span data-i18n="tagAgriculture">Nông nghiệp</span><span>Web</span><span data-i18n="tagCompetition">Cuộc thi</span>
+              </div>
+              <a class="text-link" href="https://smartgardenai.louiskiet2009.workers.dev/" target="_blank" rel="noreferrer" data-i18n="openProject">Mo du an</a>
+            </article>
+
+            <article class="project-card featured-card">
+              <div class="project-topline">
+                <span class="status progress" data-i18n="statusNinety">Hoàn thành 90%</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3>Smart Career Discovery Path</h3>
+              <p data-i18n="careerDesc">
+                Nen tang kham pha dinh huong nghe nghiep danh cho hoc sinh, giup nguoi dung hieu so thich, nang luc va huong phat trien phu hop.
+              </p>
+              <dl class="project-details">
+                <div>
+                  <dt data-i18n="labelRole">Vai tro</dt>
+                  <dd data-i18n="careerRole">Khoi xuong du an, thiet ke luong trai nghiem dau tien va phat trien phien ban chinh voi AI support.</dd>
+                </div>
+                <div>
+                  <dt data-i18n="labelNext">Tiep theo</dt>
+                  <dd data-i18n="careerNext">Kiem thu, thu nghiem voi nhom lon hon va cai thien do tin cay cua ket qua goi y.</dd>
+                </div>
+              </dl>
+              <div class="tag-row">
+                <span>AI</span><span data-i18n="tagEducation">Giáo dục</span><span data-i18n="tagCareer">Hướng nghiệp</span><span data-i18n="tagPrototype">Mẫu thử</span>
+              </div>
+              <a class="text-link" href="https://smartcarrerdiscoverypath.louiskiet2009.workers.dev/" target="_blank" rel="noreferrer" data-i18n="openProject">Mo du an</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group compact-group">
+          <div class="group-label">
+            <span data-i18n="earlyLabel">Dự án đầu tay & cộng đồng</span>
+            <small data-i18n="earlyHint">Nhung du an giup toi bat dau va tao gia tri gan minh.</small>
+          </div>
+          <div class="project-grid compact-grid">
+            <article class="project-card compact-card">
+              <span class="status muted" data-i18n="statusDone">Đã hoàn thành</span>
+              <h3>KDZVTK Game</h3>
+              <p data-i18n="gameDesc">Du an game dau tay, giup toi thuc hanh giao dien, tuong tac nguoi dung va bien y tuong nho thanh san pham chay duoc.</p>
+              <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a class="text-link" href="https://kdzvtk-game.github.io/KDZVTK-Game/" target="_blank" rel="noreferrer" data-i18n="openProject">Mo du an</a>
+            </article>
+
+            <article class="project-card compact-card">
+              <span class="status progress" data-i18n="statusInProgress">Đang phát triển</span>
+              <h3>A6-HBT</h3>
+              <p data-i18n="classDesc">Website luu giu ky niem lop hoc, mot khong gian so cho tap the va la cach toi dung web development de tao gia tri cho cong dong gan minh.</p>
+              <div class="tag-row"><span>Web</span><span data-i18n="tagCommunity">Cộng đồng</span><span data-i18n="tagMemory">Kỷ niệm</span></div>
+              <a class="text-link" href="https://a6-hbt.vercel.app/" target="_blank" rel="noreferrer" data-i18n="openProject">Mo du an</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="section-header centered">
+          <p class="eyebrow" data-i18n="skillsEyebrow">Nang luc</p>
+          <h2 id="skills-title" data-i18n="skillsTitle">Toi nhom ky nang theo cach chung tao ra san pham.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3 data-i18n="skillAiTitle">AI & workflow</h3>
+            <p data-i18n="skillAiBody">Dung AI de nghien cuu, lap ke hoach, tao prototype, ho tro code va debug.</p>
+            <div class="tag-row"><span data-i18n="tagAiCoding">Code với AI hỗ trợ</span><span data-i18n="tagPrompting">Prompting</span><span data-i18n="tagResearch">Nghiên cứu</span></div>
+          </article>
+          <article class="skill-card">
+            <h3 data-i18n="skillWebTitle">Web development</h3>
+            <p data-i18n="skillWebBody">Xay giao dien web, xu ly tuong tac va tao cac ung dung web co the demo duoc.</p>
+            <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span></div>
+          </article>
+          <article class="skill-card">
+            <h3 data-i18n="skillCodeTitle">Programming basics</h3>
+            <p data-i18n="skillCodeBody">Dang xay nen tang lap trinh qua Python, C++ va cach tu duy giai quyet bai toan.</p>
+            <div class="tag-row"><span>Python</span><span>C++</span><span data-i18n="tagProblemSolving">Giải quyết vấn đề</span></div>
+          </article>
+          <article class="skill-card">
+            <h3 data-i18n="skillProductTitle">Product thinking</h3>
+            <p data-i18n="skillProductBody">Khoi xuong y tuong, xac dinh nguoi dung, sap xep tinh nang va chuan bi demo cho cuoc thi.</p>
+            <div class="tag-row"><span data-i18n="tagIdeaShaping">Định hình ý tưởng</span><span data-i18n="tagUserFlow">Luồng người dùng</span><span data-i18n="tagTesting">Kiểm thử</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section achievements-section" id="achievements" aria-labelledby="achievements-title">
+        <div class="achievement-summary reveal">
+          <p class="eyebrow" data-i18n="achievementSummaryEyebrow">Proof of progress</p>
+          <h3 data-i18n="achievementSummaryTitle">2026 là năm tôi bắt đầu đưa AI vào dự án thật.</h3>
+          <div class="summary-metrics" aria-label="Achievement highlights">
+            <span>AI Young Guru</span>
+            <span data-i18n="summaryCommunity">Sáng kiến cộng đồng</span>
+            <span data-i18n="summarySchool">Thành tích học tập</span>
+          </div>
+        </div>
+        <div class="achievement-copy">
+          <p class="eyebrow" data-i18n="achievementsEyebrow">Thanh tich 2026</p>
+          <h2 id="achievements-title" data-i18n="achievementsTitle">Nhung dau moc dang xay niem tin cho hanh trinh AI.</h2>
+          <div class="achievement-list">
+            <article>
+              <span data-i18n="achievementSchoolTitle">HSG truong</span>
+              <p data-i18n="achievementSchoolBody">Thanh tich hoc tap cap truong, co chung nhan nam 2026.</p>
+            </article>
+            <article>
+              <span>AI Young Guru</span>
+              <p data-i18n="achievementGuruBody">Cot moc lien quan den dinh huong AI va hoc tap cong nghe.</p>
+            </article>
+            <article>
+              <span data-i18n="achievementCommunityTitle">Sang kien cong dong so vi thanh pho hoa nhap 2026</span>
+              <p data-i18n="achievementCommunityBody">Thanh tich gan voi cong dong, cong nghe va kha nang tao tac dong xa hoi.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roadmap-section" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="section-header centered">
+          <p class="eyebrow" data-i18n="roadmapEyebrow">Roadmap</p>
+          <h2 id="roadmap-title" data-i18n="roadmapTitle">Huong phat trien tiep theo.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span data-i18n="roadmapNowLabel">Now</span>
+            <h3 data-i18n="roadmapNowTitle">Cung co nen tang</h3>
+            <p data-i18n="roadmapNowBody">Hoc chac hon JavaScript, Python, AI workflow va cach viet case study cho tung du an.</p>
+          </article>
+          <article>
+            <span data-i18n="roadmapNextLabel">Next</span>
+            <h3 data-i18n="roadmapNextTitle">Kiem thu san pham that</h3>
+            <p data-i18n="roadmapNextBody">Thu nghiem Smart Career voi nhom hoc sinh lon hon va mo rong SmartGardenAI cho cuoc thi tiep theo.</p>
+          </article>
+          <article>
+            <span data-i18n="roadmapFutureLabel">Future</span>
+            <h3 data-i18n="roadmapFutureTitle">Tro thanh AI Product Builder</h3>
+            <p data-i18n="roadmapFutureBody">Xay nhung san pham AI co gia tri thuc te trong giao duc, nong nghiep va cong dong.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow" data-i18n="contactEyebrow">Lien he</p>
+          <h2 id="contact-title" data-i18n="contactTitle">San sang ket noi voi mentor, nha tuyen dung, doi tac va nhung nguoi cung xay dung.</h2>
+          <p data-i18n="contactBody">
+            Neu ban muon trao doi ve AI, giao duc, nong nghiep thong minh, du an cong dong hoac co hoi hoc tap, toi san sang ket noi.
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:kietvo2ktuankiet@gmail.com">kietvo2ktuankiet@gmail.com</a>
+          <a href="https://github.com/Kietvo2k" target="_blank" rel="noreferrer">github.com/Kietvo2k</a>
+          <a href="https://www.facebook.com/vo.tuan.kiet.128377/" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="tel:0819814173">Zalo: 0819814173</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Võ Tuấn Kiệt</span>
+      <a href="#top" data-i18n="backTop">Ve dau trang</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
