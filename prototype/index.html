@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi" data-theme="light" data-accent="orange">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio của Võ Tuấn Kiệt — khám phá những sản phẩm, ý tưởng và thử nghiệm tại giao điểm giữa code, thiết kế và AI.">
+    <meta name="theme-color" content="#f6f5f1">
+    <title>Kiet — Creative Developer & AI Builder</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/space-grotesk-bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <script src="site.config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Đến nội dung chính</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header">
+      <a href="#home" class="brand" aria-label="Trang chủ"><span class="brand-name">Kiet</span><span class="brand-star" aria-hidden="true">✳</span><sup>®</sup></a>
+      <nav aria-label="Điều hướng chính" class="desktop-nav">
+        <a href="#home" data-nav="home">Tổng quan</a>
+        <a href="#work" data-nav="work">Sản phẩm <span class="nav-count"></span></a>
+        <a href="#about" data-nav="about">Về tôi</a>
+        <a href="#playground" data-nav="playground">Playground <span class="tiny-dot"></span></a>
+      </nav>
+      <div class="header-actions">
+        <button class="command-trigger" data-action="command" aria-label="Mở tìm kiếm và lệnh nhanh (Control K)"><span data-icon="search"></span><kbd>⌘ K</kbd></button>
+        <a class="button button-dark header-contact" href="#contact">Kết nối <span data-icon="arrow-up-right"></span></a>
+        <button class="icon-button mobile-toggle" data-action="menu" aria-label="Mở menu" aria-expanded="false" aria-controls="mobile-nav"><span data-icon="menu"></span></button>
+      </div>
+    </header>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Điều hướng di động" hidden>
+      <a href="#home">Tổng quan</a><a href="#work">Sản phẩm</a><a href="#about">Về tôi</a><a href="#playground">Playground</a><a href="#contact">Kết nối</a>
+    </nav>
+    <main id="main" tabindex="-1"></main>
+    <footer class="site-footer">
+      <div class="footer-top"><a class="brand" href="#home"><span class="brand-name">Kiet</span><span class="brand-star" aria-hidden="true">✳</span></a><p>Một chút code. Một chút cá tính.<br>Rất nhiều tâm huyết.</p><a class="footer-github" target="_blank" rel="noopener noreferrer">GitHub <span data-icon="arrow-up-right"></span></a><button class="text-button" data-action="top">Lên đầu trang <span data-icon="arrow-up"></span></button></div>
+      <div class="footer-bottom"><span>© <span id="copyright-year"></span> <span class="owner-name"></span></span><span>THIẾT KẾ CÓ CHỦ ĐÍCH. XÂY BẰNG ĐAM MÊ.</span><span class="local-time"></span></div>
+    </footer>
+    <button class="studio-trigger" data-action="studio"><span data-icon="sliders"></span><span>Make it yours</span><span class="studio-colors" aria-hidden="true"><i></i><i></i><i></i></span></button>
+    <dialog id="command-dialog" class="command-dialog" aria-labelledby="command-title">
+      <div class="command-search"><span data-icon="search"></span><label class="sr-only" for="command-input" id="command-title">Tìm kiếm trang, sản phẩm và lệnh</label><input id="command-input" placeholder="Bạn muốn khám phá điều gì?" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="command-results" aria-autocomplete="list"><button class="key-button" data-close>ESC</button></div>
+      <div id="command-results" role="listbox" aria-label="Kết quả tìm kiếm"></div>
+      <div class="command-help"><span><kbd>↑</kbd> <kbd>↓</kbd> di chuyển <kbd>↵</kbd> chọn</span><span>YOUR PERSONAL SHORTCUT</span></div>
+    </dialog>
+    <dialog id="project-dialog" class="project-dialog" aria-labelledby="project-title"><button class="icon-button dialog-close" data-close aria-label="Đóng chi tiết dự án"><span data-icon="x"></span></button><div id="project-detail"></div></dialog>
+    <dialog id="studio-dialog" class="studio-dialog" aria-labelledby="studio-title">
+      <div class="dialog-heading"><div><span class="eyebrow">YOUR SPACE, YOUR RULES</span><h2 id="studio-title">Make it yours.</h2></div><button class="icon-button" data-close aria-label="Đóng tùy chỉnh"><span data-icon="x"></span></button></div>
+      <p>Thử một phiên bản khác của không gian này. Lựa chọn được lưu trên trình duyệt của bạn.</p>
+      <fieldset><legend>Màu cá tính</legend><div class="swatch-list"><button data-accent="orange" class="swatch orange" aria-label="Cam" aria-pressed="false"></button><button data-accent="violet" class="swatch violet" aria-label="Tím" aria-pressed="false"></button><button data-accent="blue" class="swatch blue" aria-label="Xanh dương" aria-pressed="false"></button><button data-accent="green" class="swatch green" aria-label="Xanh lá" aria-pressed="false"></button></div></fieldset>
+      <fieldset><legend>Không gian</legend><div class="segmented"><button data-mode="light"><span data-icon="sun"></span>Ban ngày</button><button data-mode="dark"><span data-icon="moon"></span>Ban đêm</button></div></fieldset>
+      <label class="setting-row" for="motion-toggle"><span><strong>Chuyển động</strong><small>Tắt để có trải nghiệm tĩnh, nhẹ hơn</small></span><input id="motion-toggle" type="checkbox" role="switch"></label>
+      <label class="setting-row" for="inspector-toggle"><span><strong>Design X-ray</strong><small>Khám phá cấu trúc phía sau giao diện</small></span><input id="inspector-toggle" type="checkbox" role="switch"></label>
+      <div class="config-note"><span data-icon="code"></span><p>Muốn biến thành của bạn?<br>Sửa <code>site.config.js</code> trong mã nguồn.</p></div>
+      <button class="button button-outline full-width" data-action="reset">Khôi phục mặc định</button>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <noscript><div class="no-script">Portfolio tương tác cần JavaScript. Hãy bật JavaScript trong trình duyệt để xem nội dung.</div></noscript>
+  </body>
+</html>
